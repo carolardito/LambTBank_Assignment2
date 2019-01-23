@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST 2</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="panel panel-default">
+	    <div class="panel-heading" style="background-color: black;">
+	    	<h4 class="title" style="color: white;">Test 2</h4>
+	    </div>
+	    <div class="panel-body">
+	    	<ul id="erro-messages"></ul>
+			<section class="container">
+				<h1 class="gpatitle">WELCOME: <label class="sameline" id="receivedUser"></label> </h1>
+
+				<label class="gpaAllGrade">From:</label>
+				<select class="form-control" id="fromOption" onchange="optionSelectedFrom()">
+				  <option value="chequing">Chequing</option>
+				  <option value="other">Other</option>
+				</select>
+				<input id="otherInputFrom" type="text" name="other" class="invisible form-control" placeholder="Type which other.">
+
+				<label class="gpaAllGrade">To:</label>
+				<select class="form-control" id="toOption" onchange="optionSelectedTo()">
+				  <option value="chequing">Chequing</option>
+					<option value="other">Other</option>
+				</select>
+				<input id="otherInput" type="text" name="other" class="invisible form-control" placeholder="Type which other.">
+
+				<label class="gpaAllGrade">Current Balance:</label>
+				<input id="currentBalance" type="text" name="currentBalance" class="form-control" disabled value="1000">
+
+				<div id="divCredit">
+					<label class="gpaAllGrade">Credit:</label>
+					<input id="credit" type="text" name="credit" class="inline form-control" disabled value="1000">
+					<input id="creditAvailable" type="text" name="creditAvailable" class="inline form-control" disabled value="1000">
+				</div>
+
+				<label class="gpaAllGrade">Amount: </label>
+				<input id="amount" type="text" name="amount" class="form-control">
+
+				<button class="btn btn-primary" type="button" name="button calculateAmount" id="calculateAmount">Calculate</button><br>
+				<label class="gpaAllGrade">Final Balance</label>
+				<input class="form-control" id="totalBalance" type="text" name="totalBalance" disabled>
+
+				<ul id="erro-messages"></ul>
+
+				<button type="button" name="button" id="btnSubmit" class="btn btn-primary">Submit</button>
+				<button type="button" name="button" id="btnBack" class="btn btn-primary">Back</button>
+			</section>
+		</div>
+	</div>
+<!--	
+	<header>
+		<div class="container">
+			<h1 class="title">Test 2</h1>
+		</div>
+	</header>
+
+	<main>
+		<ul id="erro-messages"></ul>
+		<section class="container">
+			<h1 class="gpatitle">WELCOME: <label class="sameline" id="receivedUser"></label> </h1>
+
+			<label class="gpaAllGrade">From:</label>
+			<select id="fromOption" onchange="optionSelectedFrom()">
+			  <option value="chequing">Chequing</option>
+			  <option value="other">Other</option>
+			</select>
+			<input id="otherInputFrom" type="text" name="other" class="invisible" placeholder="Type which other.">
+
+			<label class="gpaAllGrade">To:</label>
+			<select id="toOption" onchange="optionSelectedTo()">
+			  <option value="chequing">Chequing</option>
+				<option value="other">Other</option>
+			</select>
+			<input id="otherInput" type="text" name="other" class="invisible" placeholder="Type which other.">
+
+			<label class="gpaAllGrade">Current Balance:</label>
+			<input id="currentBalance" type="text" name="currentBalance" class="" disabled value="1000">
+
+			<div id="divCredit">
+				<label class="gpaAllGrade">Credit:</label>
+				<input id="credit" type="text" name="credit" class="inline" disabled value="1000">
+				<input id="creditAvailable" type="text" name="creditAvailable" class="inline" disabled value="1000">
+			</div>
+
+			<label class="gpaAllGrade">Amount: </label>
+			<input id="amount" type="text" name="amount" class="">
+
+			<button type="button" name="button calculateAmount" id="calculateAmount">Calculate</button>
+			<label class="gpaAllGrade">Final Balance</label>
+			<input id="totalBalance" type="text" name="totalBalance" disabled>
+
+			<ul id="erro-messages"></ul>
+
+			<button type="button" name="button" id="btnSubmit" class="">Submit</button>
+			<button type="button" name="button" id="btnBack" class="">Back</button>
+		</section>
+	</main>
+	-->
+
+	<script src="js/formatDate.js">			</script>
+	<script src="js/receiveInfo.js">    </script>
+	<script src="js/amountCalculation.js">    </script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

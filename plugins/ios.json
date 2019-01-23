@@ -1,0 +1,40 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.carolini.accounttransfer"
+    }
+  }
+}

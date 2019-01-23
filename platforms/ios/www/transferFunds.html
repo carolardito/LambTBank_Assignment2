@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST 2</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1 class="title">Test 2</h1>
+		</div>
+	</header>
+
+	<main>
+		<ul id="erro-messages"></ul>
+		<section class="container">
+			<h1 class="gpatitle">WELCOME: <label class="sameline" id="receivedUser"></label> </h1>
+
+			<label class="gpaAllGrade">From:</label>
+			<select id="fromOption" onchange="optionSelectedFrom()">
+			  <option value="chequing">Chequing</option>
+			  <option value="other">Other</option>
+			</select>
+			<input id="otherInputFrom" type="text" name="other" class="invisible" placeholder="Type which other.">
+
+			<label class="gpaAllGrade">To:</label>
+			<select id="toOption" onchange="optionSelectedTo()">
+			  <option value="chequing">Chequing</option>
+				<option value="other">Other</option>
+			</select>
+			<input id="otherInput" type="text" name="other" class="invisible" placeholder="Type which other.">
+
+			<label class="gpaAllGrade">Current Balance:</label>
+			<input id="currentBalance" type="text" name="currentBalance" class="" disabled value="1000">
+
+			<div id="divCredit">
+				<label class="gpaAllGrade">Credit:</label>
+				<input id="credit" type="text" name="credit" class="inline" disabled value="1000">
+				<input id="creditAvailable" type="text" name="creditAvailable" class="inline" disabled value="1000">
+			</div>
+
+			<label class="gpaAllGrade">Amount: </label>
+			<input id="amount" type="text" name="amount" class="">
+
+			<button type="button" name="button calculateAmount" id="calculateAmount">Calculate</button>
+			<label class="gpaAllGrade">Final Balance</label>
+			<input id="totalBalance" type="text" name="totalBalance" disabled>
+
+			<ul id="erro-messages"></ul>
+
+			<button type="button" name="button" id="btnSubmit" class="">Submit</button>
+			<button type="button" name="button" id="btnBack" class="">Back</button>
+		</section>
+	</main>
+
+	<script src="js/formatDate.js">			</script>
+	<script src="js/receiveInfo.js">    </script>
+	<script src="js/amountCalculation.js">    </script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

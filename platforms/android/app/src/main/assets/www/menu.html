@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<!--<meta charset="UTF-8">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TEST 2</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1 class="title">Test 2 - Menu</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="center" style="padding: 0;"><h4> Hello <strong><span id="user"></span></strong></h4>
+           <ul style="border: 1px solid black">
+            	<li data-role="list-divider" id="title" class="ui-li-divider ui-bar-a"></li>
+                <li><span id="summary"><span id="temperature"></span> °F <img src="" /></span></li>
+                <!--<li>Wind: <span id="wind"></span> knots</li>
+                <li>Humidity: <span id="humidity"></span> %</li>-->
+                <li>Visibility: <span id="visibility"></span></li>
+                <li>Sunrise: <span id="sunrise"></span></li>
+                <li>Sunset: <span id="sunset"></span></li>
+            </ul>
+
+            <div id="error-msg" class="not-displayed"></div>
+
+        </div>
+		<div class="center" style="padding: 0;">
+			<div id="divToHide">
+				<a href="profile.html" class="sizeLinks inline">Profile-Update Requested</a><br>
+			</div>			
+			<a href="transferFunds.html" class="sizeLinks inline">Transfer Funds</a><br>
+			<a href="changePassword.html" class="sizeLinks inline">Change My Password</a><br>
+			<a href="voidCheck.html" class="sizeLinks inline">Print My Void Check</a><br>
+			<a href="accountSummary.html" class="sizeLinks inline">Account Summary</a><br>
+			<a href="contact.html" class="sizeLinks inline">Contact</a><br>
+			<a href="index.html" class="sizeLinks inline" id="exitLink">Exit</a><br>
+		</div>
+	</main>
+
+	
+	<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/menuPage.js">    </script>
+	<script src="js/weather.js">    </script>
+
+</body>
+</html>

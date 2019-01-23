@@ -1,0 +1,35 @@
+.information22{
+  font-size: 22px;
+}
+
+.information12{
+  font-size: 12.5px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.boxDollar{
+  border:1px solid;
+  height: 45px;
+  width: 100px;
+}
+
+.dollarDiv{
+  padding-top:-100px;
+  font-size: 22px;
+}
+
+.linewithpadding{
+  padding-top:35px;
+  padding-left: 25px;
+}
+
+.rbcBackgraund{
+  color: #cce0ff;
+}
+
+body {
+  font-family: 'Abel', sans-serif;
+}

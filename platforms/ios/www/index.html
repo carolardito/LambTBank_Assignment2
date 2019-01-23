@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>TEST 2</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1 class="title">Test 2 - Login</h1>
+		</div>
+	</header>
+
+	<main>
+		<ul id="erro-messages"></ul>
+		<section class="container">
+			<form class="" action="index.html" method="post" id="form-login">
+				<label for=""> User:</label>
+				<input type="text" name="user" value="" id="user">
+				<label for=""> Password:</label>
+				<input type="password" name="password" value="" id="password">
+
+				<button type="button" name="button bto-principal" id="btnSubmit">Submit</button>
+
+			</form>
+		</section>
+
+		<section id="sectionReload" class="invisible">
+			<input type="text" name="countTimes" value="0" id="countTimes">
+
+			<input type="text" name="firstUser" id="firstUser">
+			<input type="text" name="firstInicialBalance" id="firstInicialBalance">
+			<input type="text" name="firstFinalBalance" id="firstFinalBalance">
+
+			<input type="text" name="secondUser" id="secondUser">
+			<input type="text" name="secondInicialBalance" id="secondInicialBalance">
+			<input type="text" name="secondFinalBalance" id="secondFinalBalance">
+		</section>
+
+		</div>
+	</main>
+
+	<script src="js/formatDate.js">			</script>
+	<script src="js/form-validation.js"></script>
+	<script src="js/userLogin.js">    	</script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
